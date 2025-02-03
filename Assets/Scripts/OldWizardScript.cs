@@ -32,6 +32,8 @@ public class OldWizardScript : MonoBehaviour {
 
     private string lastDirection = "right"; //defaulted right, would later be determined by player
 
+    float allowJumpFor;
+
 
     void Start() {
         rb2d = GetComponent<Rigidbody2D>();
@@ -40,6 +42,8 @@ public class OldWizardScript : MonoBehaviour {
 
         frameTimerUp = frameTimerDown = frameTimerLeft = frameTimerRight = frameTimerIdle = (1f / framesPerSecond);
         frameIndexLeft = frameIndexRight = frameIndexUp = frameIndexDown = frameIndexIdle = 0;
+
+        allowJumpFor = 0.2f;
     }
 
     // Update is called once per frame
@@ -50,8 +54,15 @@ public class OldWizardScript : MonoBehaviour {
         inputX = 0;
         playerSpriteRenderer.flipX = false;
 
+        if (collideCheck.IsCollided) {
+            Debug.Log("collided");
+            allowJumpFor = 0.2f;
+            Debug.Log("allowJumpFor: " + allowJumpFor);
+        }
+        
         //prioritize up/down over left/right
-        if (Input.GetKey(KeyCode.UpArrow)) {
+        if (Input.GetKey(KeyCode.UpArrow) && allowJumpFor > 0) {
+            allowJumpFor -= Time.deltaTime;
             isMoving = true;
             frameTimerUp -= Time.deltaTime;
             if (frameTimerUp <= 0) {
