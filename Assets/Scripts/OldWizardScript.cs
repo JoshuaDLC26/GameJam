@@ -73,7 +73,7 @@ public class OldWizardScript : MonoBehaviour
             }
             inputY = 1;
         }
-        else if (Input.GetKey(KeyCode.UpArrow) && Input.GetKey(KeyCode.RightArrow)) {
+        if (Input.GetKey(KeyCode.UpArrow) && Input.GetKey(KeyCode.RightArrow)) {
             isMoving = true;
             frameTimerUp -= Time.deltaTime;
             if (frameTimerUp <= 0) {
@@ -85,9 +85,10 @@ public class OldWizardScript : MonoBehaviour
                 playerSpriteRenderer.sprite = framesUp[frameIndexUp];
             }
             inputY = 1;
+            inputX = 1;
             lastDirection = "right";
         }
-        else if (Input.GetKey(KeyCode.UpArrow) && Input.GetKey(KeyCode.LeftArrow)) {
+        if (Input.GetKey(KeyCode.UpArrow) && Input.GetKey(KeyCode.LeftArrow)) {
             isMoving = true;
             frameTimerUp -= Time.deltaTime;
             if (frameTimerUp <= 0) {
@@ -99,9 +100,11 @@ public class OldWizardScript : MonoBehaviour
                 playerSpriteRenderer.sprite = framesUp[frameIndexUp];
             }
             inputY = 1;
+            inputX = -1;
             lastDirection = "left";
+            playerSpriteRenderer.flipX = true;
         }
-        else if (Input.GetKey(KeyCode.LeftArrow)) {
+        if (Input.GetKey(KeyCode.LeftArrow)) {
             isMoving = true;
             frameTimerLeft -= Time.deltaTime;
             if (frameTimerLeft <= 0) {
@@ -116,7 +119,7 @@ public class OldWizardScript : MonoBehaviour
             inputX = -1;
             lastDirection = "left";
         }
-        else if (Input.GetKey(KeyCode.DownArrow) && collideCheck.IsCollided) {
+        if (Input.GetKey(KeyCode.DownArrow) && collideCheck.IsCollided) {
             isMoving = true;
             playerSpriteRenderer.sprite = spriteDown;
             if (lastDirection == "left") {
@@ -124,19 +127,22 @@ public class OldWizardScript : MonoBehaviour
             }
             inputY = -1;
         }
-        else if (Input.GetKey(KeyCode.DownArrow) && Input.GetKey(KeyCode.RightArrow) && collideCheck.IsCollided) {
+        if (Input.GetKey(KeyCode.DownArrow) && Input.GetKey(KeyCode.RightArrow) && collideCheck.IsCollided) {
             isMoving = true;
             playerSpriteRenderer.sprite = spriteDown;
             lastDirection = "right";
             inputY = -1;
+            inputX = 1;
         }
-        else if (Input.GetKey(KeyCode.DownArrow) && Input.GetKey(KeyCode.LeftArrow) && collideCheck.IsCollided) {
+        if (Input.GetKey(KeyCode.DownArrow) && Input.GetKey(KeyCode.LeftArrow) && collideCheck.IsCollided) {
             isMoving = true;
             playerSpriteRenderer.sprite = spriteDown;
+            playerSpriteRenderer.flipX = true;
             lastDirection = "left";
             inputY = -1;
+            inputX = -1;
         }
-        else if (Input.GetKey(KeyCode.DownArrow)) {
+        if (Input.GetKey(KeyCode.DownArrow)) {
             isMoving = true;
             frameTimerDown -= Time.deltaTime;
             if (frameTimerDown <= 0) {
@@ -152,7 +158,7 @@ public class OldWizardScript : MonoBehaviour
             }
             inputY = -1;
         }
-        else if (Input.GetKey(KeyCode.DownArrow) && Input.GetKey(KeyCode.RightArrow)) {
+        if (Input.GetKey(KeyCode.DownArrow) && Input.GetKey(KeyCode.RightArrow)) {
             isMoving = true;
             frameTimerDown -= Time.deltaTime;
             if (frameTimerDown <= 0) {
@@ -166,7 +172,7 @@ public class OldWizardScript : MonoBehaviour
             lastDirection = "right";
             inputY = -1;
         }
-        else if (Input.GetKey(KeyCode.LeftArrow)) {
+        if (Input.GetKey(KeyCode.LeftArrow)) {
             isMoving = true;
             frameTimerDown -= Time.deltaTime;
             if (frameTimerDown <= 0) {
@@ -181,7 +187,7 @@ public class OldWizardScript : MonoBehaviour
             lastDirection = "left";
             inputY = -1;
         }
-        else if (Input.GetKey(KeyCode.RightArrow)) {
+        if (Input.GetKey(KeyCode.RightArrow)) {
             isMoving = true;
             frameTimerRight -= Time.deltaTime;
             if (frameTimerRight <= 0) {
