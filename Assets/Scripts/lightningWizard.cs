@@ -4,7 +4,7 @@ using System;
 using static UnityEngine.UI.Image;
 using UnityEngine.SceneManagement;
 
-public class lightningWizard : MonoBehaviour
+public class LightningWizard : MonoBehaviour
 {
     [Header("Player Speed")]
     public float speed = 14;
@@ -114,6 +114,7 @@ public class lightningWizard : MonoBehaviour
 
         if (Input.GetKey(down))
         {
+            inputY = -1;
             animationLoop(crouchAnimations);
         }
 

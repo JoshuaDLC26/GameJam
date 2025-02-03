@@ -84,7 +84,9 @@ public class OldWizardScript : MonoBehaviour {
                 lastDirection = "left";
                 playerSpriteRenderer.flipX = true;
             }
-        } else if (Input.GetKey(KeyCode.DownArrow)) {
+        } 
+
+        else if (Input.GetKey(KeyCode.DownArrow)) {
             isMoving = true;
             if (collideCheck.IsCollided) {
                 playerSpriteRenderer.sprite = spriteDown;
@@ -110,7 +112,9 @@ public class OldWizardScript : MonoBehaviour {
                 lastDirection = "left";
                 playerSpriteRenderer.flipX = true;
             }
-        } else if (Input.GetKey(KeyCode.LeftArrow)) {
+        } 
+          
+        else if (Input.GetKey(KeyCode.LeftArrow)) {
             isMoving = true;
             frameTimerLeft -= Time.deltaTime;
             if (frameTimerLeft <= 0) {
@@ -125,7 +129,9 @@ public class OldWizardScript : MonoBehaviour {
             playerSpriteRenderer.flipX = true;
             lastDirection = "left";
             inputX = -1;
-        } else if (Input.GetKey(KeyCode.RightArrow)) {
+        } 
+        
+        else if (Input.GetKey(KeyCode.RightArrow)) {
             isMoving = true;
             frameTimerRight -= Time.deltaTime;
             if (frameTimerRight <= 0) {
