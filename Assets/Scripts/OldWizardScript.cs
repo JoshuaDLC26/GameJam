@@ -171,6 +171,7 @@ public class OldWizardScript : MonoBehaviour
             }
             lastDirection = "right";
             inputY = -1;
+            inputX = 1;
         }
         if (Input.GetKey(KeyCode.LeftArrow)) {
             isMoving = true;
