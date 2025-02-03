@@ -109,7 +109,7 @@ public class WizardScript : MonoBehaviour
             animationLoop(crouchAnimations);
         }
 
-        if (Input.GetKeyDown(attack))
+        if (Input.GetKey(attack))
         {
             animationLoop(attackAnimations);
         }
