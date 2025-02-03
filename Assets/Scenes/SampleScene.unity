@@ -391,7 +391,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
       propertyPath: attackAnimations.Array.size
-      value: 20
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
       propertyPath: 'jumpAnimations.Array.data[0]'
@@ -509,6 +509,14 @@ PrefabInstance:
       propertyPath: 'attackAnimations.Array.data[19]'
       value: 
       objectReference: {fileID: -5917225385495910460, guid: ff5b9dae881c541159412339d39a913c, type: 3}
+    - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
+      propertyPath: 'attackAnimations.Array.data[20]'
+      value: 
+      objectReference: {fileID: -6654450932365588299, guid: ff5b9dae881c541159412339d39a913c, type: 3}
+    - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
+      propertyPath: 'attackAnimations.Array.data[21]'
+      value: 
+      objectReference: {fileID: -592982695212483181, guid: ff5b9dae881c541159412339d39a913c, type: 3}
     - target: {fileID: 5418500716379364578, guid: 824a532e491ac0544859c93260237448, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.6
