@@ -110,14 +110,6 @@ public class WizardScript : MonoBehaviour
 
         if (Input.GetKey(attack))
         {
-            if (playerBody.linearVelocityX > 0)
-            {
-                spriteRenderer.flipX = false;
-            }
-            else
-            {
-                spriteRenderer.flipX = true;
-            }
             animationLoop(attackAnimations);
         }
 
