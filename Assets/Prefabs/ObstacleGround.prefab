@@ -13,8 +13,13 @@ GameObject:
   - component: {fileID: 9120648626223349320}
   - component: {fileID: -5181108426858168369}
   m_Layer: 0
+<<<<<<< Updated upstream:Assets/Prefabs/ObstacleGround.prefab
   m_Name: ObstacleGround
   m_TagString: Untagged
+=======
+  m_Name: Obstacle
+  m_TagString: obstacleStage
+>>>>>>> Stashed changes:Assets/Prefabs/Obstacle.prefab
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
