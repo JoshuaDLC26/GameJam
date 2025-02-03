@@ -20,18 +20,20 @@ public class Obstacles : MonoBehaviour
 
     //private void OnCollisionEnter2D(Collision2D collision)
     //{
-    //    if (collision.gameObject.CompareTag("Player")) {
+    //    if (collision.gameObject.CompareTag("Player"))
+    //    {
     //        Rigidbody2D playerVel = collision.gameObject.GetComponent<Rigidbody2D>();
     //        Transform playerLoc = collision.gameObject.GetComponent<Transform>();
     //        if (((playerVel.linearVelocityY + playerVel.gravityScale) > 0 && (playerLoc.position.y < transform.position.y)) ||
     //            ((playerVel.linearVelocityY + playerVel.gravityScale) < 0 && playerLoc.position.y > transform.position.y))
     //        {
     //            obstacle.isTrigger = true;
-    //            playerComingThrough=true;
+    //            playerComingThrough = true;
     //        }
-    //        else { 
+    //        else
+    //        {
     //            obstacle.isTrigger = false;
-    //            playerComingThrough=false;
+    //            playerComingThrough = false;
     //        }
     //    }
     //}

@@ -105,6 +105,7 @@ public class WizardScript : MonoBehaviour
 
         if (Input.GetKey(down))
         {
+            inputY = -1;
             animationLoop(crouchAnimations);
         }
 
