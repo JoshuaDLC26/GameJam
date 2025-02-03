@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Fighting Static Blue Crouch Front P_0: 4923793939333501832
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Fighting Static Blue Crouch Guard_0: 2741761047787589946
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Fighting Static Blue Back P_0: -8609660681185918167
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
