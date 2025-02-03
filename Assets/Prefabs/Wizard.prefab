@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: -7622055798821291475}
   - component: {fileID: 1850940449221456162}
   - component: {fileID: 7793161205995820390}
+  - component: {fileID: 498267047956199172}
   m_Layer: 0
   m_Name: Wizard
   m_TagString: Untagged
@@ -78,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 4723107735738678597, guid: 7aa3488554a56164a936958eaed535f2, type: 3}
+  m_Sprite: {fileID: 4723107735738678597, guid: f9e676da0171249a3903c99345ca2471, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -127,7 +128,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.5, y: 3.35}
+    oldSize: {x: 0.3, y: 0.67}
     newSize: {x: 0.3, y: 0.67}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -135,14 +136,14 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.4, y: 1.6750001}
-      - {x: -0.7, y: 1.6750001}
-      - {x: -0.75, y: 1.325}
-      - {x: -0.75, y: -1.625}
-      - {x: -0.65000004, y: -1.6750001}
-      - {x: 0.75, y: -1.6750001}
-      - {x: 0.75, y: -0.375}
-      - {x: 0.55, y: 1.525}
+    - - {x: 0.0848999, y: 0.38053477}
+      - {x: -0.120897055, y: 0.34647}
+      - {x: -0.14534783, y: -0.080176234}
+      - {x: -0.21347839, y: -0.37311566}
+      - {x: 0.005748868, y: -0.44014823}
+      - {x: 0.1716659, y: -0.41037726}
+      - {x: 0.23051059, y: -0.34945148}
+      - {x: 0.13270575, y: 0.10279131}
   m_UseDelaunayMesh: 0
 --- !u!50 &7793161205995820390
 Rigidbody2D:
@@ -171,3 +172,32 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &498267047956199172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7187236822613042581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2929a8d010e25b54da483ef0a448d247, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 14
+  playerNum: 1
+  spriteRenderer: {fileID: 0}
+  jumpAnimations: []
+  turningAnimations:
+  - {fileID: 4944230376442633554, guid: 9a4023c47c2c44f0498163896024bda5, type: 3}
+  - {fileID: -2274363484027164459, guid: 9a4023c47c2c44f0498163896024bda5, type: 3}
+  - {fileID: 8284087734974297348, guid: 9a4023c47c2c44f0498163896024bda5, type: 3}
+  - {fileID: 5304202850863732263, guid: 9a4023c47c2c44f0498163896024bda5, type: 3}
+  - {fileID: 2833043080597125133, guid: 9a4023c47c2c44f0498163896024bda5, type: 3}
+  - {fileID: -2217414122262695004, guid: 9a4023c47c2c44f0498163896024bda5, type: 3}
+  - {fileID: -4440497016933152808, guid: 9a4023c47c2c44f0498163896024bda5, type: 3}
+  - {fileID: 8676454946275842879, guid: 9a4023c47c2c44f0498163896024bda5, type: 3}
+  crouchAnimations:
+  - {fileID: -1631342717326862633, guid: 09ac4b99dc6454357a770c4757ec92dc, type: 3}
+  attackAnimations: []
+  animationFPS: 9

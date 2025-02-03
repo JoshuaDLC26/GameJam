@@ -16,6 +16,8 @@ public class WizardScript : MonoBehaviour
     [Header("Animation Arrays")]
     public Sprite[] jumpAnimations;
     public Sprite[] turningAnimations;
+    public Sprite[] crouchAnimations;
+    public Sprite[] attackAnimations;
 
     [Header("Animation FPS")]
     public float animationFPS;
@@ -67,6 +69,8 @@ public class WizardScript : MonoBehaviour
         KeyCode up = KeyCode.UpArrow;
         KeyCode right = KeyCode.RightArrow;
         KeyCode left = KeyCode.LeftArrow;
+        KeyCode down = KeyCode.DownArrow;
+        KeyCode attack = KeyCode.L;
        
 
         if (playerNum == 2)
@@ -74,6 +78,8 @@ public class WizardScript : MonoBehaviour
             up = KeyCode.W;
             right = KeyCode.D;
             left = KeyCode.A;
+            down = KeyCode.S;
+            attack = KeyCode.E;
         }
 
         if (Input.GetKey(up))
@@ -99,9 +105,20 @@ public class WizardScript : MonoBehaviour
 
         if (Input.GetKey(down))
         {
-            inputX = 1;
-            spriteRenderer.flipX = false;
-            animationLoop(turningAnimations);
+            animationLoop(crouchAnimations);
+        }
+
+        if (Input.GetKey(attack))
+        {
+            if (playerBody.linearVelocityX > 0)
+            {
+                spriteRenderer.flipX = false;
+            }
+            else
+            {
+                spriteRenderer.flipX = true;
+            }
+            animationLoop(attackAnimations);
         }
 
         Vector2 direction = new Vector2(inputX, inputY);
