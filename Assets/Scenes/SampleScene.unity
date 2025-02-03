@@ -391,7 +391,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
       propertyPath: attackAnimations.Array.size
-      value: 4
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
       propertyPath: 'jumpAnimations.Array.data[0]'
@@ -432,19 +432,83 @@ PrefabInstance:
     - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
       propertyPath: 'attackAnimations.Array.data[0]'
       value: 
-      objectReference: {fileID: -837275676153275556, guid: 8a2107d2f3e944da3b16f2c0ca360f84, type: 3}
+      objectReference: {fileID: 4628084955922223119, guid: ff5b9dae881c541159412339d39a913c, type: 3}
     - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
       propertyPath: 'attackAnimations.Array.data[1]'
       value: 
-      objectReference: {fileID: -8404040051688745268, guid: 8a2107d2f3e944da3b16f2c0ca360f84, type: 3}
+      objectReference: {fileID: -2969656341666883635, guid: ff5b9dae881c541159412339d39a913c, type: 3}
     - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
       propertyPath: 'attackAnimations.Array.data[2]'
       value: 
-      objectReference: {fileID: -3526194569594660169, guid: 8a2107d2f3e944da3b16f2c0ca360f84, type: 3}
+      objectReference: {fileID: 1905417572217150490, guid: ff5b9dae881c541159412339d39a913c, type: 3}
     - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
       propertyPath: 'attackAnimations.Array.data[3]'
       value: 
-      objectReference: {fileID: 950650993592285724, guid: 8a2107d2f3e944da3b16f2c0ca360f84, type: 3}
+      objectReference: {fileID: 6124931126438338997, guid: ff5b9dae881c541159412339d39a913c, type: 3}
+    - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
+      propertyPath: 'attackAnimations.Array.data[4]'
+      value: 
+      objectReference: {fileID: 5862354036684096429, guid: ff5b9dae881c541159412339d39a913c, type: 3}
+    - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
+      propertyPath: 'attackAnimations.Array.data[5]'
+      value: 
+      objectReference: {fileID: 204132811695256350, guid: ff5b9dae881c541159412339d39a913c, type: 3}
+    - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
+      propertyPath: 'attackAnimations.Array.data[6]'
+      value: 
+      objectReference: {fileID: 4970080592206777693, guid: ff5b9dae881c541159412339d39a913c, type: 3}
+    - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
+      propertyPath: 'attackAnimations.Array.data[7]'
+      value: 
+      objectReference: {fileID: -5917225385495910460, guid: ff5b9dae881c541159412339d39a913c, type: 3}
+    - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
+      propertyPath: 'attackAnimations.Array.data[8]'
+      value: 
+      objectReference: {fileID: -304780578828527639, guid: ff5b9dae881c541159412339d39a913c, type: 3}
+    - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
+      propertyPath: 'attackAnimations.Array.data[9]'
+      value: 
+      objectReference: {fileID: -5917225385495910460, guid: ff5b9dae881c541159412339d39a913c, type: 3}
+    - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
+      propertyPath: 'attackAnimations.Array.data[10]'
+      value: 
+      objectReference: {fileID: -304780578828527639, guid: ff5b9dae881c541159412339d39a913c, type: 3}
+    - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
+      propertyPath: 'attackAnimations.Array.data[11]'
+      value: 
+      objectReference: {fileID: -5917225385495910460, guid: ff5b9dae881c541159412339d39a913c, type: 3}
+    - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
+      propertyPath: 'attackAnimations.Array.data[12]'
+      value: 
+      objectReference: {fileID: -304780578828527639, guid: ff5b9dae881c541159412339d39a913c, type: 3}
+    - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
+      propertyPath: 'attackAnimations.Array.data[13]'
+      value: 
+      objectReference: {fileID: -5917225385495910460, guid: ff5b9dae881c541159412339d39a913c, type: 3}
+    - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
+      propertyPath: 'attackAnimations.Array.data[14]'
+      value: 
+      objectReference: {fileID: -304780578828527639, guid: ff5b9dae881c541159412339d39a913c, type: 3}
+    - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
+      propertyPath: 'attackAnimations.Array.data[15]'
+      value: 
+      objectReference: {fileID: -5917225385495910460, guid: ff5b9dae881c541159412339d39a913c, type: 3}
+    - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
+      propertyPath: 'attackAnimations.Array.data[16]'
+      value: 
+      objectReference: {fileID: -304780578828527639, guid: ff5b9dae881c541159412339d39a913c, type: 3}
+    - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
+      propertyPath: 'attackAnimations.Array.data[17]'
+      value: 
+      objectReference: {fileID: -5917225385495910460, guid: ff5b9dae881c541159412339d39a913c, type: 3}
+    - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
+      propertyPath: 'attackAnimations.Array.data[18]'
+      value: 
+      objectReference: {fileID: -304780578828527639, guid: ff5b9dae881c541159412339d39a913c, type: 3}
+    - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
+      propertyPath: 'attackAnimations.Array.data[19]'
+      value: 
+      objectReference: {fileID: -5917225385495910460, guid: ff5b9dae881c541159412339d39a913c, type: 3}
     - target: {fileID: 5418500716379364578, guid: 824a532e491ac0544859c93260237448, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.6
