@@ -1,6 +1,7 @@
 using UnityEngine;
 using System;
 using System.Collections;
+using Random = UnityEngine.Random;  // This is the correct way to reference Random
 
 public class OldWizardScript : MonoBehaviour
 {
@@ -23,7 +24,7 @@ public class OldWizardScript : MonoBehaviour
 
     // public Sprite spriteRight;
 
-    public float xOffset;
+    // public float xOffset;
 
     public Sprite spriteDown;
 
@@ -61,7 +62,7 @@ public class OldWizardScript : MonoBehaviour
         frameIndexLeft = frameIndexRight = frameIndexUp = frameIndexDown = frameIndexIdle = frameIndexAttack2 = frameIndexDeath = frameIndexAttack1 = 0;
 
 
-        xOffset = 0;
+        // xOffset = 0;
         // allowJumpFor = 0.2f;
         if (playerNum == 1)
         {
@@ -74,7 +75,7 @@ public class OldWizardScript : MonoBehaviour
         }
         else if (playerNum == 3)
         {
-            dir = Random.Range(0, 2);
+            float dir = Random.Range(0, 2);
             if (dir == 0) {
                 lastDirection = "right";
             }
