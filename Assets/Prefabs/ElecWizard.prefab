@@ -134,6 +134,9 @@ MonoBehaviour:
   speed: 14
   playerNum: 1
   spriteRenderer: {fileID: 3788105864815676994}
+  hitLayers:
+    serializedVersion: 2
+    m_Bits: 0
   jumpAnimations:
   - {fileID: 7460046300004610927, guid: a5d4f8dd8a85844b4bf14f70ffd998ea, type: 3}
   - {fileID: 7034338576483803127, guid: a5d4f8dd8a85844b4bf14f70ffd998ea, type: 3}
@@ -267,4 +270,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bee6be8584e53e4ea9c284933a561b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 40
+  health: 200

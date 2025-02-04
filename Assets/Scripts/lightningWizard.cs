@@ -121,7 +121,7 @@ public class LightningWizard : MonoBehaviour
             Vector2 origin = new Vector2(transform.position.x, transform.position.y);
             Vector2 target = new Vector2(transform.position.x + 2, transform.position.y);
             Vector2 cool = target - origin;
-            Wait();
+            StartCoroutine(Wait());
             RaycastHit2D attackHit = Physics2D.Raycast(origin, cool, 2f, hitLayers);
             if (attackHit.collider != null)
             {

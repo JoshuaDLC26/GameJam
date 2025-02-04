@@ -104,7 +104,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 14
-  playerNum: 1
+  playerNum: 2
+  hitLayers:
+    serializedVersion: 2
+    m_Bits: 0
   jumpAnimations:
   - {fileID: 3580086529375993838, guid: 45b20023bab274eb8b16c3309db697fd, type: 3}
   turningAnimations:
@@ -148,11 +151,7 @@ MonoBehaviour:
   - {fileID: -3927913518680497933, guid: 09ac4b99dc6454357a770c4757ec92dc, type: 3}
   - {fileID: -1057675302478342458, guid: 09ac4b99dc6454357a770c4757ec92dc, type: 3}
   - {fileID: -7954960911384535938, guid: 09ac4b99dc6454357a770c4757ec92dc, type: 3}
-  slash: {fileID: 8300000, guid: 50fe3e436ae66e343a889a1c84aa0ffe, type: 3}
-  fire: {fileID: 8300000, guid: b33b5963fd6af684e9985469eec02d2d, type: 3}
-  turn: {fileID: 8300000, guid: 1348290c8aefeb34ab22df34d40076b7, type: 3}
   animationFPS: 9
-  health: 200
 --- !u!114 &2889545542639315617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,7 +164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bee6be8584e53e4ea9c284933a561b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 40
+  health: 200
 --- !u!60 &4503788282526265384
 PolygonCollider2D:
   m_ObjectHideFlags: 0
