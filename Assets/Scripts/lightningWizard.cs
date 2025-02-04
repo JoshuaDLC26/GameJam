@@ -150,6 +150,8 @@ public class LightningWizard : MonoBehaviour
         yield return new WaitForSeconds(3f);
     }
 
+  
+
     IEnumerator Wait()
     {
         yield return new WaitForSeconds(1f);

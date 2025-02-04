@@ -42,6 +42,9 @@ public class Character : MonoBehaviour
             }
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+        if (transform.position.y < -5) {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 
 }

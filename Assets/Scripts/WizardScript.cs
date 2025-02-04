@@ -199,6 +199,10 @@ public class WizardScript : MonoBehaviour
             {
                 health -= 40;
             }
+            if (collision.otherCollider.CompareTag("bottomBound"))
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
 
         }
     }
