@@ -46,7 +46,7 @@ public class OldWizardScript : MonoBehaviour {
         frameTimerUp = frameTimerDown = frameTimerLeft = frameTimerRight = frameTimerIdle = (1f / framesPerSecond);
         frameIndexLeft = frameIndexRight = frameIndexUp = frameIndexDown = frameIndexIdle = 0;
 
-        allowJumpFor = 0.2f;
+        // allowJumpFor = 0.2f;
     }
 
     // Update is called once per frame
@@ -57,15 +57,16 @@ public class OldWizardScript : MonoBehaviour {
         inputX = 0;
         playerSpriteRenderer.flipX = false;
 
-        if (collideCheck.IsCollided) {
-            Debug.Log("collided");
-            allowJumpFor = 0.2f;
-            Debug.Log("allowJumpFor: " + allowJumpFor);
-        }
+        // if (collideCheck.IsCollided) {
+        //     Debug.Log("collided");
+        //     allowJumpFor = 0.2f;
+        //     Debug.Log("allowJumpFor: " + allowJumpFor);
+        // }
         
         //prioritize up/down over left/right
-        if (Input.GetKey(KeyCode.UpArrow) && allowJumpFor > 0) {
-            allowJumpFor -= Time.deltaTime;
+        // && allowJumpFor > 0
+        if (Input.GetKey(KeyCode.UpArrow)) {
+            // allowJumpFor -= Time.deltaTime;
             isMoving = true;
             frameTimerUp -= Time.deltaTime;
             if (frameTimerUp <= 0) {
