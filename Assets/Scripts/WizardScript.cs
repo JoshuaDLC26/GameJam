@@ -13,7 +13,7 @@ public class WizardScript : MonoBehaviour
     [Header("Player Number")]
     public float playerNum = 1;
     public LayerMask hitLayers;
-
+    public float xOffset;
 
     SpriteRenderer spriteRenderer;
 
@@ -36,6 +36,8 @@ public class WizardScript : MonoBehaviour
     int currentFrame;
     float animationTimer;
 
+    private string lastDirection;
+
     private Rigidbody2D playerBody;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -45,6 +47,15 @@ public class WizardScript : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         currentFrame = 0;
         animationTimer = 1f / animationFPS;
+
+        if (playerNum == 1)
+        {
+            lastDirection = "right";
+        }
+        else {
+            lastDirection = "left";
+            spriteRenderer.flipX = true;
+        }
     }
 
     // Update is called once per frame
@@ -103,6 +114,7 @@ public class WizardScript : MonoBehaviour
 
         if (Input.GetKey(left))
         {
+            lastDirection = "left";
             inputX = -1;
             spriteRenderer.flipX = true;
             animationLoop(turningAnimations);
@@ -111,6 +123,7 @@ public class WizardScript : MonoBehaviour
 
         if (Input.GetKey(right))
         {
+            lastDirection = "right";
             inputX = 1;
             spriteRenderer.flipX = false;
             animationLoop(turningAnimations);
@@ -126,7 +139,7 @@ public class WizardScript : MonoBehaviour
         {
             animationLoop(rangeattackAnimations);
             Vector2 origin = new Vector2(transform.position.x, transform.position.y);
-            Vector2 target = new Vector2(transform.position.x + 2, transform.position.y);
+            Vector2 target = new Vector2(transform.position.x - 2, transform.position.y);
             Vector2 cool = target - origin;
             StartCoroutine(Wait());
             RaycastHit2D attackHit = Physics2D.Raycast(origin, cool, 2f, hitLayers);
@@ -143,9 +156,17 @@ public class WizardScript : MonoBehaviour
 
         if (Input.GetKey(closeAttack))
         {
+            xOffset = 2.0f;
+            if (lastDirection == "left") {
+                spriteRenderer.flipX = true;
+                xOffset = -2.0f;
+            }
             animationLoop(closeattackAnimations);
+            
+
+
             Vector2 origin = new Vector2(transform.position.x, transform.position.y);
-            Vector2 target = new Vector2(transform.position.x + 2, transform.position.y);
+            Vector2 target = new Vector2(transform.position.x + xOffset, transform.position.y);
             Vector2 cool = target - origin;
             StartCoroutine(Wait());
             RaycastHit2D attackHit = Physics2D.Raycast(origin, cool, 1f, hitLayers);

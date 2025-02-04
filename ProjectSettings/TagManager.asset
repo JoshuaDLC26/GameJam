@@ -5,7 +5,9 @@ TagManager:
   serializedVersion: 3
   tags:
   - obstacleStage
-  - Attacking
+  - Player1
+  - Player2
+  - bottomBound
   layers:
   - Default
   - TransparentFX
@@ -13,8 +15,8 @@ TagManager:
   - Ground
   - Water
   - UI
-  - 
-  - 
+  - Player1
+  - Player2
   - 
   - 
   - 

@@ -10,7 +10,6 @@ public class Character : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        health = 40;
         if (GetComponent<LightningWizard>() != null) { 
             isLightning = true;
         }
