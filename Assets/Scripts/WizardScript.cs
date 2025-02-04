@@ -2,6 +2,7 @@ using System.Runtime.CompilerServices;
 using UnityEngine;
 using System;
 using static UnityEngine.UI.Image;
+using UnityEngine.SceneManagement;
 
 public class WizardScript : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class WizardScript : MonoBehaviour
     public Sprite[] turningAnimations;
     public Sprite[] crouchAnimations;
     public Sprite[] attackAnimations;
+    public Sprite[] deathAnimations;
 
     [Header("Animation FPS")]
     public float animationFPS;
@@ -25,6 +27,7 @@ public class WizardScript : MonoBehaviour
     float animationTimer;
 
     private Rigidbody2D playerBody;
+    public float health = 200;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -40,8 +43,11 @@ public class WizardScript : MonoBehaviour
     {
 
         playerMovement();
-
-    }
+        if (health <= 0)
+        {
+            deathAnimation();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
 
     private void animationLoop(Sprite[] animationArray)
     {
@@ -72,7 +78,6 @@ public class WizardScript : MonoBehaviour
         KeyCode down = KeyCode.DownArrow;
         KeyCode attack = KeyCode.L;
        
-
         if (playerNum == 2)
         {
             up = KeyCode.W;
@@ -112,6 +117,7 @@ public class WizardScript : MonoBehaviour
         if (Input.GetKey(attack))
         {
             animationLoop(attackAnimations);
+            gameObject.tag = "Attacking";
         }
 
         Vector2 direction = new Vector2(inputX, inputY);
@@ -124,5 +130,21 @@ public class WizardScript : MonoBehaviour
 
         playerBody.linearVelocity = direction * speed;
 
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision != null)
+        {
+            if (collision.otherCollider.CompareTag("Attacking"))
+            {
+                health -= 40;
+            }
+
+        }
+    }
+    void deathAnimation()
+    {
+        animationLoop(deathAnimations);
     }
 }
