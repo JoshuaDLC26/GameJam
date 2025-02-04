@@ -1,7 +1,7 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 using System;
-using static UnityEngine.UI.Image;
+using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class LightningWizard : MonoBehaviour
@@ -27,7 +27,6 @@ public class LightningWizard : MonoBehaviour
     float animationTimer;
 
     private Rigidbody2D playerBody;
-    private float health =200;
     
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -45,10 +44,7 @@ public class LightningWizard : MonoBehaviour
        
 
         playerMovement();
-        if (health <= 0) { 
-        deathAnimation();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        }
+
 
     }
 
@@ -120,17 +116,15 @@ public class LightningWizard : MonoBehaviour
 
         if (Input.GetKey(attack))
         {
-            if (playerBody.linearVelocityX > 0)
-            {
-                spriteRenderer.flipX = false;
-            }
-            else
-            {
-                spriteRenderer.flipX = true;
-            }
             animationLoop(attackAnimations);
             gameObject.tag = "Attacking";
-            
+            Vector2 origin = new Vector2(transform.position.x, transform.position.y);
+            Vector2 target = new Vector2(transform.position.x+2, transform.position.y);
+            Vector2 cool = target - origin;
+            RaycastHit2D attackHit = Physics2D.Raycast(origin, cool, 2);
+            if (attackHit.collider.CompareTag("Player")) {
+                
+            }
         }
 
         Vector2 direction = new Vector2(inputX, inputY);
@@ -144,18 +138,8 @@ public class LightningWizard : MonoBehaviour
         playerBody.linearVelocity = direction * speed;
 
     }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision != null)
-        {
-            if (collision.otherCollider.CompareTag("Attacking"))
-            {
-                health -= 40;
-            }
-            
-        }
-    }
-    void deathAnimation() { 
-    animationLoop(deathAnimations);
+    public IEnumerator deathAnimation() {
+        animationLoop(deathAnimations);
+        yield return new WaitForSeconds(1f);
     }
 }
