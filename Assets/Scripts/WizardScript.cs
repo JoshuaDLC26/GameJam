@@ -18,7 +18,8 @@ public class WizardScript : MonoBehaviour
     public Sprite[] jumpAnimations;
     public Sprite[] turningAnimations;
     public Sprite[] crouchAnimations;
-    public Sprite[] attackAnimations;
+    public Sprite[] rangeattackAnimations;
+    public Sprite[] closeattackAnimations;
     public Sprite[] deathAnimations;
 
     [Header("Animation FPS")]
@@ -48,6 +49,7 @@ public class WizardScript : MonoBehaviour
             deathAnimation();
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+    }
 
     private void animationLoop(Sprite[] animationArray)
     {
@@ -76,7 +78,8 @@ public class WizardScript : MonoBehaviour
         KeyCode right = KeyCode.RightArrow;
         KeyCode left = KeyCode.LeftArrow;
         KeyCode down = KeyCode.DownArrow;
-        KeyCode attack = KeyCode.L;
+        KeyCode rangeAttack = KeyCode.L;
+        KeyCode closeAttack = KeyCode.K;
        
         if (playerNum == 2)
         {
@@ -84,7 +87,8 @@ public class WizardScript : MonoBehaviour
             right = KeyCode.D;
             left = KeyCode.A;
             down = KeyCode.S;
-            attack = KeyCode.E;
+            rangeAttack = KeyCode.G;
+            closeAttack = KeyCode.H;
         }
 
         if (Input.GetKey(up))
@@ -114,9 +118,15 @@ public class WizardScript : MonoBehaviour
             animationLoop(crouchAnimations);
         }
 
-        if (Input.GetKey(attack))
+        if (Input.GetKey(rangeAttack))
         {
-            animationLoop(attackAnimations);
+            animationLoop(rangeattackAnimations);
+            gameObject.tag = "Attacking";
+        }
+
+        if (Input.GetKey(closeAttack))
+        {
+            animationLoop(closeattackAnimations);
             gameObject.tag = "Attacking";
         }
 
