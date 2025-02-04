@@ -197,7 +197,7 @@ public class WizardScript : MonoBehaviour
         {
             if (collision.otherCollider.CompareTag("Attacking"))
             {
-             a   health -= 40;
+                health -= 40;
             }
 
         }
