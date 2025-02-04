@@ -3,6 +3,7 @@ using UnityEngine;
 using System;
 using static UnityEngine.UI.Image;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class WizardScript : MonoBehaviour
 {
@@ -153,8 +154,9 @@ public class WizardScript : MonoBehaviour
 
         }
     }
-    void deathAnimation()
+    public IEnumerator deathAnimation()
     {
         animationLoop(deathAnimations);
+        yield return new WaitForSeconds(3f);
     }
 }

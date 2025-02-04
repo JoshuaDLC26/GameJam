@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -3947371350850448920}
   - component: {fileID: 5868598384650528301}
   - component: {fileID: -8861946286090651298}
+  - component: {fileID: 7246811446177738907}
   m_Layer: 0
   m_Name: ElecWizard
   m_TagString: Untagged
@@ -254,3 +255,16 @@ PolygonCollider2D:
       - {x: 0.12787654, y: 0.1329608}
       - {x: 0.14, y: 0.265}
   m_UseDelaunayMesh: 0
+--- !u!114 &7246811446177738907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3781716952247532201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bee6be8584e53e4ea9c284933a561b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 40

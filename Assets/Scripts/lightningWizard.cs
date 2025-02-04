@@ -13,6 +13,7 @@ public class LightningWizard : MonoBehaviour
     public float playerNum = 1;
 
     public SpriteRenderer spriteRenderer;
+    public LayerMask hitLayers;
 
     [Header("Animation Arrays")]
     public Sprite[] jumpAnimations;
@@ -117,13 +118,19 @@ public class LightningWizard : MonoBehaviour
         if (Input.GetKey(attack))
         {
             animationLoop(attackAnimations);
-            gameObject.tag = "Attacking";
             Vector2 origin = new Vector2(transform.position.x, transform.position.y);
-            Vector2 target = new Vector2(transform.position.x+2, transform.position.y);
+            Vector2 target = new Vector2(transform.position.x + 2, transform.position.y);
             Vector2 cool = target - origin;
-            RaycastHit2D attackHit = Physics2D.Raycast(origin, cool, 2);
-            if (attackHit.collider.CompareTag("Player")) {
-                
+            Wait();
+            RaycastHit2D attackHit = Physics2D.Raycast(origin, cool, 2f, hitLayers);
+            if (attackHit.collider != null)
+            {
+                Character ch = attackHit.collider.GetComponent<Character>();
+                Debug.Log("Hit!!!");
+                if ( ch != null)
+                {
+                    ch.health -= 40;
+                }
             }
         }
 
@@ -140,6 +147,11 @@ public class LightningWizard : MonoBehaviour
     }
     public IEnumerator deathAnimation() {
         animationLoop(deathAnimations);
+        yield return new WaitForSeconds(3f);
+    }
+
+    IEnumerator Wait()
+    {
         yield return new WaitForSeconds(1f);
     }
 }
