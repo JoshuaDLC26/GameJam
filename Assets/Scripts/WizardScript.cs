@@ -102,8 +102,8 @@ public class WizardScript : MonoBehaviour
             right = KeyCode.D;
             left = KeyCode.A;
             down = KeyCode.S;
-            rangeAttack = KeyCode.G;
-            closeAttack = KeyCode.H;
+            rangeAttack = KeyCode.Q;
+            closeAttack = KeyCode.E;
         }
 
         if (Input.GetKey(up))
