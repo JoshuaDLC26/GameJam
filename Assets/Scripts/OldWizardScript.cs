@@ -19,9 +19,11 @@ public class OldWizardScript : MonoBehaviour
 
     public LayerMask hitLayers;
 
-    public float playerNum = 1;
+    public float playerNum = 3;
 
     // public Sprite spriteRight;
+
+    public float xOffset;
 
     public Sprite spriteDown;
 
@@ -58,14 +60,28 @@ public class OldWizardScript : MonoBehaviour
         frameTimerUp = frameTimerDown = frameTimerLeft = frameTimerRight = frameTimerIdle = frameTimerAttack2 = frameTimerDeath = frameTimerAttack1 = (1f / framesPerSecond);
         frameIndexLeft = frameIndexRight = frameIndexUp = frameIndexDown = frameIndexIdle = frameIndexAttack2 = frameIndexDeath = frameIndexAttack1 = 0;
 
+
+        xOffset = 0;
         // allowJumpFor = 0.2f;
         if (playerNum == 1)
         {
             lastDirection = "right";
         }
-        else
+        else if (playerNum == 2)
         {
             lastDirection = "left";
+            playerSpriteRenderer.flipX = true;
+        }
+        else if (playerNum == 3)
+        {
+            dir = Random.Range(0, 2);
+            if (dir == 0) {
+                lastDirection = "right";
+            }
+            else if (dir == 1) {
+                lastDirection = "left";
+                playerSpriteRenderer.flipX = true;
+            }
         }
     }
 
@@ -88,6 +104,15 @@ public class OldWizardScript : MonoBehaviour
             down = KeyCode.S;
             attack2 = KeyCode.E;
             attack1 = KeyCode.Q;
+        }
+
+        if (playerNum == 3) {
+            up = KeyCode.I;
+            right = KeyCode.L;
+            left = KeyCode.J;
+            down = KeyCode.K;
+            attack2 = KeyCode.U;
+            attack1 = KeyCode.O;
         }
 
         bool isMoving = false;
@@ -221,14 +246,15 @@ public class OldWizardScript : MonoBehaviour
                 frameTimerAttack1 = (1f / framesPerSecond);
                 playerSpriteRenderer.sprite = framesAttack1[frameIndexAttack1];
             }
-
+            xOffset = 1;
             if (lastDirection == "left")
             {
                 playerSpriteRenderer.flipX = true;
+                xOffset = -1;
             }
 
             Vector2 origin = new Vector2(transform.position.x, transform.position.y);
-            Vector2 target = new Vector2(transform.position.x + 1, transform.position.y);
+            Vector2 target = new Vector2(transform.position.x + xOffset, transform.position.y);
             Vector2 cool = target - origin;
             Wait();
             RaycastHit2D attackHit = Physics2D.Raycast(origin, cool, 2f, hitLayers);
@@ -257,6 +283,13 @@ public class OldWizardScript : MonoBehaviour
                 frameTimerAttack2 = (1f / framesPerSecond);
                 playerSpriteRenderer.sprite = framesAttack2[frameIndexAttack2];
             }
+            
+            xOffset = 2;
+            if (lastDirection == "left")
+            {
+                playerSpriteRenderer.flipX = true;
+                xOffset = -2;
+            }
 
             if (lastDirection == "left")
             {
@@ -264,7 +297,7 @@ public class OldWizardScript : MonoBehaviour
             }
 
             Vector2 origin = new Vector2(transform.position.x, transform.position.y);
-            Vector2 target = new Vector2(transform.position.x + 2, transform.position.y);
+            Vector2 target = new Vector2(transform.position.x + xOffset, transform.position.y);
             Vector2 cool = target - origin;
             Wait();
             RaycastHit2D attackHit = Physics2D.Raycast(origin, cool, 2f, hitLayers);
