@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -3005796030820160250}
   - component: {fileID: 2889545542639315617}
   - component: {fileID: 4503788282526265384}
+  - component: {fileID: -2416016580168316280}
   m_Layer: 0
   m_Name: FIreWizard
   m_TagString: Untagged
@@ -30,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -104,14 +105,53 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 14
   playerNum: 1
-  spriteRenderer: {fileID: 0}
-  jumpAnimations: []
-  turningAnimations: []
-  crouchAnimations: []
-  rangeattackAnimations: []
-  closeattackAnimations: []
-  deathAnimations: []
-  animationFPS: 0
+  jumpAnimations:
+  - {fileID: 3580086529375993838, guid: 45b20023bab274eb8b16c3309db697fd, type: 3}
+  turningAnimations:
+  - {fileID: 4944230376442633554, guid: 9a4023c47c2c44f0498163896024bda5, type: 3}
+  - {fileID: -2274363484027164459, guid: 9a4023c47c2c44f0498163896024bda5, type: 3}
+  - {fileID: 8284087734974297348, guid: 9a4023c47c2c44f0498163896024bda5, type: 3}
+  - {fileID: 5304202850863732263, guid: 9a4023c47c2c44f0498163896024bda5, type: 3}
+  - {fileID: 2833043080597125133, guid: 9a4023c47c2c44f0498163896024bda5, type: 3}
+  - {fileID: -2217414122262695004, guid: 9a4023c47c2c44f0498163896024bda5, type: 3}
+  - {fileID: -4440497016933152808, guid: 9a4023c47c2c44f0498163896024bda5, type: 3}
+  - {fileID: 8676454946275842879, guid: 9a4023c47c2c44f0498163896024bda5, type: 3}
+  crouchAnimations:
+  - {fileID: 3967418731061993063, guid: 45b20023bab274eb8b16c3309db697fd, type: 3}
+  rangeattackAnimations:
+  - {fileID: 4628084955922223119, guid: ff5b9dae881c541159412339d39a913c, type: 3}
+  - {fileID: -2969656341666883635, guid: ff5b9dae881c541159412339d39a913c, type: 3}
+  - {fileID: 1905417572217150490, guid: ff5b9dae881c541159412339d39a913c, type: 3}
+  - {fileID: 6124931126438338997, guid: ff5b9dae881c541159412339d39a913c, type: 3}
+  - {fileID: 5862354036684096429, guid: ff5b9dae881c541159412339d39a913c, type: 3}
+  - {fileID: 204132811695256350, guid: ff5b9dae881c541159412339d39a913c, type: 3}
+  - {fileID: 4970080592206777693, guid: ff5b9dae881c541159412339d39a913c, type: 3}
+  - {fileID: -304780578828527639, guid: ff5b9dae881c541159412339d39a913c, type: 3}
+  - {fileID: -5917225385495910460, guid: ff5b9dae881c541159412339d39a913c, type: 3}
+  - {fileID: -304780578828527639, guid: ff5b9dae881c541159412339d39a913c, type: 3}
+  - {fileID: -5917225385495910460, guid: ff5b9dae881c541159412339d39a913c, type: 3}
+  - {fileID: -304780578828527639, guid: ff5b9dae881c541159412339d39a913c, type: 3}
+  - {fileID: -5917225385495910460, guid: ff5b9dae881c541159412339d39a913c, type: 3}
+  - {fileID: -304780578828527639, guid: ff5b9dae881c541159412339d39a913c, type: 3}
+  - {fileID: 2826275064931682926, guid: ff5b9dae881c541159412339d39a913c, type: 3}
+  - {fileID: -4101116586549745412, guid: ff5b9dae881c541159412339d39a913c, type: 3}
+  - {fileID: -592982695212483181, guid: ff5b9dae881c541159412339d39a913c, type: 3}
+  closeattackAnimations:
+  - {fileID: -837275676153275556, guid: 8a2107d2f3e944da3b16f2c0ca360f84, type: 3}
+  - {fileID: -8404040051688745268, guid: 8a2107d2f3e944da3b16f2c0ca360f84, type: 3}
+  - {fileID: -3526194569594660169, guid: 8a2107d2f3e944da3b16f2c0ca360f84, type: 3}
+  - {fileID: 950650993592285724, guid: 8a2107d2f3e944da3b16f2c0ca360f84, type: 3}
+  deathAnimations:
+  - {fileID: 2649847697073447219, guid: 09ac4b99dc6454357a770c4757ec92dc, type: 3}
+  - {fileID: -8293461521501190705, guid: 09ac4b99dc6454357a770c4757ec92dc, type: 3}
+  - {fileID: -1631342717326862633, guid: 09ac4b99dc6454357a770c4757ec92dc, type: 3}
+  - {fileID: -3927913518680497933, guid: 09ac4b99dc6454357a770c4757ec92dc, type: 3}
+  - {fileID: -1057675302478342458, guid: 09ac4b99dc6454357a770c4757ec92dc, type: 3}
+  - {fileID: -7954960911384535938, guid: 09ac4b99dc6454357a770c4757ec92dc, type: 3}
+  slash: {fileID: 8300000, guid: 50fe3e436ae66e343a889a1c84aa0ffe, type: 3}
+  fire: {fileID: 8300000, guid: b33b5963fd6af684e9985469eec02d2d, type: 3}
+  turn: {fileID: 8300000, guid: 1348290c8aefeb34ab22df34d40076b7, type: 3}
+  animationFPS: 9
   health: 200
 --- !u!114 &2889545542639315617
 MonoBehaviour:
@@ -192,3 +232,30 @@ PolygonCollider2D:
       - {x: 0.14999999, y: -0.29999998}
       - {x: 0.13, y: -0.29390296}
   m_UseDelaunayMesh: 0
+--- !u!50 &-2416016580168316280
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2939428565556043826}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 20
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4

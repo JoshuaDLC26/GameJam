@@ -608,7 +608,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1174409491
+--- !u!1001 &1061742990
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -616,151 +616,55 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
-      propertyPath: jumpAnimations.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
-      propertyPath: 'jumpAnimations.Array.data[0]'
-      value: 
-      objectReference: {fileID: 3580086529375993838, guid: 45b20023bab274eb8b16c3309db697fd, type: 3}
-    - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
-      propertyPath: 'jumpAnimations.Array.data[2]'
-      value: 
-      objectReference: {fileID: 6937500446539429301, guid: 45b20023bab274eb8b16c3309db697fd, type: 3}
-    - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
-      propertyPath: 'jumpAnimations.Array.data[3]'
-      value: 
-      objectReference: {fileID: 3580086529375993838, guid: 45b20023bab274eb8b16c3309db697fd, type: 3}
-    - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
-      propertyPath: 'jumpAnimations.Array.data[4]'
-      value: 
-      objectReference: {fileID: 3630178267427638470, guid: 45b20023bab274eb8b16c3309db697fd, type: 3}
-    - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
-      propertyPath: 'jumpAnimations.Array.data[5]'
-      value: 
-      objectReference: {fileID: 3900142949445631465, guid: 45b20023bab274eb8b16c3309db697fd, type: 3}
-    - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
-      propertyPath: 'jumpAnimations.Array.data[6]'
-      value: 
-      objectReference: {fileID: 3330681223243198311, guid: 45b20023bab274eb8b16c3309db697fd, type: 3}
-    - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
-      propertyPath: 'crouchAnimations.Array.data[0]'
-      value: 
-      objectReference: {fileID: 3630178267427638470, guid: 45b20023bab274eb8b16c3309db697fd, type: 3}
-    - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
-      propertyPath: rangeattackAnimations.Array.size
-      value: 18
-      objectReference: {fileID: 0}
-    - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
-      propertyPath: 'rangeattackAnimations.Array.data[7]'
-      value: 
-      objectReference: {fileID: -304780578828527639, guid: ff5b9dae881c541159412339d39a913c, type: 3}
-    - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
-      propertyPath: 'rangeattackAnimations.Array.data[8]'
-      value: 
-      objectReference: {fileID: -5917225385495910460, guid: ff5b9dae881c541159412339d39a913c, type: 3}
-    - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
-      propertyPath: 'rangeattackAnimations.Array.data[9]'
-      value: 
-      objectReference: {fileID: -304780578828527639, guid: ff5b9dae881c541159412339d39a913c, type: 3}
-    - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
-      propertyPath: 'rangeattackAnimations.Array.data[10]'
-      value: 
-      objectReference: {fileID: -5917225385495910460, guid: ff5b9dae881c541159412339d39a913c, type: 3}
-    - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
-      propertyPath: 'rangeattackAnimations.Array.data[11]'
-      value: 
-      objectReference: {fileID: -304780578828527639, guid: ff5b9dae881c541159412339d39a913c, type: 3}
-    - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
-      propertyPath: 'rangeattackAnimations.Array.data[12]'
-      value: 
-      objectReference: {fileID: -5917225385495910460, guid: ff5b9dae881c541159412339d39a913c, type: 3}
-    - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
-      propertyPath: 'rangeattackAnimations.Array.data[13]'
-      value: 
-      objectReference: {fileID: -304780578828527639, guid: ff5b9dae881c541159412339d39a913c, type: 3}
-    - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
-      propertyPath: 'rangeattackAnimations.Array.data[14]'
-      value: 
-      objectReference: {fileID: -5917225385495910460, guid: ff5b9dae881c541159412339d39a913c, type: 3}
-    - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
-      propertyPath: 'rangeattackAnimations.Array.data[15]'
-      value: 
-      objectReference: {fileID: -304780578828527639, guid: ff5b9dae881c541159412339d39a913c, type: 3}
-    - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
-      propertyPath: 'rangeattackAnimations.Array.data[16]'
-      value: 
-      objectReference: {fileID: 2826275064931682926, guid: ff5b9dae881c541159412339d39a913c, type: 3}
-    - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
-      propertyPath: 'rangeattackAnimations.Array.data[17]'
-      value: 
-      objectReference: {fileID: -6654450932365588299, guid: ff5b9dae881c541159412339d39a913c, type: 3}
-    - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
-      propertyPath: 'rangeattackAnimations.Array.data[18]'
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
-      propertyPath: 'rangeattackAnimations.Array.data[19]'
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
-      propertyPath: 'rangeattackAnimations.Array.data[20]'
-      value: 
-      objectReference: {fileID: 2826275064931682926, guid: ff5b9dae881c541159412339d39a913c, type: 3}
-    - target: {fileID: 498267047956199172, guid: 824a532e491ac0544859c93260237448, type: 3}
-      propertyPath: 'rangeattackAnimations.Array.data[21]'
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5418500716379364578, guid: 824a532e491ac0544859c93260237448, type: 3}
+    - target: {fileID: 2265659039502722790, guid: 721acad5d9a4b8542984d1f1f277bad6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.10389233
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5418500716379364578, guid: 824a532e491ac0544859c93260237448, type: 3}
+    - target: {fileID: 2265659039502722790, guid: 721acad5d9a4b8542984d1f1f277bad6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.6085073
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5418500716379364578, guid: 824a532e491ac0544859c93260237448, type: 3}
+    - target: {fileID: 2265659039502722790, guid: 721acad5d9a4b8542984d1f1f277bad6, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5418500716379364578, guid: 824a532e491ac0544859c93260237448, type: 3}
+    - target: {fileID: 2265659039502722790, guid: 721acad5d9a4b8542984d1f1f277bad6, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5418500716379364578, guid: 824a532e491ac0544859c93260237448, type: 3}
+    - target: {fileID: 2265659039502722790, guid: 721acad5d9a4b8542984d1f1f277bad6, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5418500716379364578, guid: 824a532e491ac0544859c93260237448, type: 3}
+    - target: {fileID: 2265659039502722790, guid: 721acad5d9a4b8542984d1f1f277bad6, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5418500716379364578, guid: 824a532e491ac0544859c93260237448, type: 3}
+    - target: {fileID: 2265659039502722790, guid: 721acad5d9a4b8542984d1f1f277bad6, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5418500716379364578, guid: 824a532e491ac0544859c93260237448, type: 3}
+    - target: {fileID: 2265659039502722790, guid: 721acad5d9a4b8542984d1f1f277bad6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5418500716379364578, guid: 824a532e491ac0544859c93260237448, type: 3}
+    - target: {fileID: 2265659039502722790, guid: 721acad5d9a4b8542984d1f1f277bad6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5418500716379364578, guid: 824a532e491ac0544859c93260237448, type: 3}
+    - target: {fileID: 2265659039502722790, guid: 721acad5d9a4b8542984d1f1f277bad6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7187236822613042581, guid: 824a532e491ac0544859c93260237448, type: 3}
+    - target: {fileID: 2939428565556043826, guid: 721acad5d9a4b8542984d1f1f277bad6, type: 3}
       propertyPath: m_Name
-      value: Wizard
+      value: FIreWizard
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 824a532e491ac0544859c93260237448, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 721acad5d9a4b8542984d1f1f277bad6, type: 3}
 --- !u!1 &1525918971
 GameObject:
   m_ObjectHideFlags: 0
@@ -991,5 +895,5 @@ SceneRoots:
   - {fileID: 447831873}
   - {fileID: 585182642}
   - {fileID: 1525918974}
-  - {fileID: 1174409491}
   - {fileID: 976834807}
+  - {fileID: 1061742990}
