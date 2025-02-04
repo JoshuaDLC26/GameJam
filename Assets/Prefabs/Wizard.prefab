@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -183,6 +183,7 @@ MonoBehaviour:
   - {fileID: -4101116586549745412, guid: ff5b9dae881c541159412339d39a913c, type: 3}
   - {fileID: -6654450932365588299, guid: ff5b9dae881c541159412339d39a913c, type: 3}
   - {fileID: -592982695212483181, guid: ff5b9dae881c541159412339d39a913c, type: 3}
+<<<<<<< Updated upstream
   closeattackAnimations:
   - {fileID: -837275676153275556, guid: 8a2107d2f3e944da3b16f2c0ca360f84, type: 3}
   - {fileID: -8404040051688745268, guid: 8a2107d2f3e944da3b16f2c0ca360f84, type: 3}
@@ -209,6 +210,9 @@ MonoBehaviour:
   - {fileID: -7954960911384535938, guid: 09ac4b99dc6454357a770c4757ec92dc, type: 3}
   - {fileID: -7954960911384535938, guid: 09ac4b99dc6454357a770c4757ec92dc, type: 3}
   - {fileID: -7954960911384535938, guid: 09ac4b99dc6454357a770c4757ec92dc, type: 3}
+=======
+  deathAnimations: []
+>>>>>>> Stashed changes
   animationFPS: 9
   health: 200
 --- !u!60 &5429868876028710229

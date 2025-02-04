@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -152,6 +152,7 @@ MonoBehaviour:
   - {fileID: -7266845314124737194, guid: 789dd05bfc08844ea91be07c5911985c, type: 3}
   - {fileID: -3387832490922303652, guid: 789dd05bfc08844ea91be07c5911985c, type: 3}
   crouchAnimations:
+  - {fileID: -8293461521501190705, guid: 5ffa5741a02674f1b983e13dcf193d3c, type: 3}
   - {fileID: -1631342717326862633, guid: 5ffa5741a02674f1b983e13dcf193d3c, type: 3}
   - {fileID: -3927913518680497933, guid: 5ffa5741a02674f1b983e13dcf193d3c, type: 3}
   attackAnimations:
@@ -173,7 +174,7 @@ MonoBehaviour:
   - {fileID: -1631342717326862633, guid: 5ffa5741a02674f1b983e13dcf193d3c, type: 3}
   - {fileID: -3927913518680497933, guid: 5ffa5741a02674f1b983e13dcf193d3c, type: 3}
   - {fileID: -1057675302478342458, guid: 5ffa5741a02674f1b983e13dcf193d3c, type: 3}
-  animationFPS: 10
+  animationFPS: 9
 --- !u!114 &5868598384650528301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,7 +182,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3781716952247532201}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eb228042d1296486c99d23276dbad9da, type: 3}
   m_Name: 

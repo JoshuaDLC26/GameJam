@@ -1,5 +1,6 @@
 using UnityEngine;
 using System;
+using System.Collections;
 
 public class OldWizardScript : MonoBehaviour {
     // private bool isMoving = false;
@@ -22,6 +23,8 @@ public class OldWizardScript : MonoBehaviour {
     public Sprite[] framesDown;
 
     public Sprite[] framesIdle; //defaulted right
+
+    public Sprite[] deathAnimations;
 
     float frameTimerLeft, frameTimerRight, frameTimerUp, frameTimerDown, frameTimerIdle;
 
@@ -191,5 +194,28 @@ public class OldWizardScript : MonoBehaviour {
             }
         }
         rb2d.linearVelocity = new Vector2(inputX, inputY) * speed;
+    }
+
+    private void animationLoop(Sprite[] animationArray)
+    {
+        //animationTimer -= Time.deltaTime;
+        //if (animationTimer < 0)
+        //{
+        //    animationTimer = 1f / animationFPS;
+        //    currentFrame++;
+        //    if (currentFrame >= animationArray.Length)
+        //    {
+        //        currentFrame = 0;
+
+        //    }
+        //    spriteRenderer.sprite = animationArray[currentFrame];
+        //}
+
+    }
+
+    public IEnumerator deathAnimation()
+    {
+        animationLoop(deathAnimations);
+        yield return new WaitForSeconds(1f);
     }
 }
