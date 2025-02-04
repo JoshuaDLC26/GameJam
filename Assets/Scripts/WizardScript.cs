@@ -13,7 +13,7 @@ public class WizardScript : MonoBehaviour
     [Header("Player Number")]
     public float playerNum = 1;
 
-    public SpriteRenderer spriteRenderer;
+    SpriteRenderer spriteRenderer;
 
     [Header("Animation Arrays")]
     public Sprite[] jumpAnimations;
@@ -22,6 +22,12 @@ public class WizardScript : MonoBehaviour
     public Sprite[] rangeattackAnimations;
     public Sprite[] closeattackAnimations;
     public Sprite[] deathAnimations;
+
+    [Header("Sounds")]
+
+    public AudioClip slash;
+    public AudioClip fire;
+    public AudioClip turn;
 
     [Header("Animation FPS")]
     public float animationFPS;
@@ -45,6 +51,7 @@ public class WizardScript : MonoBehaviour
     {
 
         playerMovement();
+        playerSound();
         if (health <= 0)
         {
             deathAnimation();
@@ -123,6 +130,7 @@ public class WizardScript : MonoBehaviour
         {
             animationLoop(rangeattackAnimations);
             gameObject.tag = "Attacking";
+       
         }
 
         if (Input.GetKey(closeAttack))
@@ -143,13 +151,53 @@ public class WizardScript : MonoBehaviour
 
     }
 
+    private void playerSound()
+    {
+       
+        KeyCode up = KeyCode.UpArrow;
+        KeyCode right = KeyCode.RightArrow;
+        KeyCode left = KeyCode.LeftArrow;
+        KeyCode rangeAttack = KeyCode.L;
+        KeyCode closeAttack = KeyCode.K;
+
+        if (playerNum == 2)
+        {
+            up = KeyCode.W;
+            right = KeyCode.D;
+            left = KeyCode.A;
+            rangeAttack = KeyCode.G;
+            closeAttack = KeyCode.H;
+        }
+
+        if (Input.GetKeyDown(up))
+        {
+            AudioSource.PlayClipAtPoint(slash, transform.position);
+        }
+
+        if (Input.GetKeyDown(left) || Input.GetKeyDown(right))
+        {
+
+            AudioSource.PlayClipAtPoint(turn, transform.position);
+
+        }
+
+        if (Input.GetKeyDown(rangeAttack))
+        {
+            AudioSource.PlayClipAtPoint(fire, transform.position);
+        }
+
+        if (Input.GetKey(closeAttack))
+        {
+            AudioSource.PlayClipAtPoint(slash, transform.position);
+        }
+    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision != null)
         {
             if (collision.otherCollider.CompareTag("Attacking"))
             {
-                health -= 40;
+             a   health -= 40;
             }
 
         }
