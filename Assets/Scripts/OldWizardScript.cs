@@ -108,12 +108,12 @@ public class OldWizardScript : MonoBehaviour
         }
 
         if (playerNum == 3) {
-            up = KeyCode.I;
-            right = KeyCode.L;
-            left = KeyCode.J;
-            down = KeyCode.K;
-            attack2 = KeyCode.U;
-            attack1 = KeyCode.O;
+            up = KeyCode.Y;
+            right = KeyCode.J;
+            left = KeyCode.G;
+            down = KeyCode.H;
+            attack2 = KeyCode.T;
+            attack1 = KeyCode.U;
         }
 
         bool isMoving = false;

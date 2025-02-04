@@ -195,7 +195,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+  xOffset: 0
   collideCheck: {fileID: 0}
+  hitLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  playerNum: 1
   spriteDown: {fileID: -1891625820773287384, guid: d7a7b2c8bd9d74f229ab69d020d03559, type: 3}
   framesRight:
   - {fileID: 4944230376442633554, guid: e640e13b98e1f43a0beaca504c654730, type: 3}
@@ -219,6 +224,24 @@ MonoBehaviour:
   - {fileID: 6373048116405451881, guid: de8486de340774f13914dc50b8b99af1, type: 3}
   - {fileID: 7264182050183361747, guid: de8486de340774f13914dc50b8b99af1, type: 3}
   - {fileID: -2834552850196481573, guid: de8486de340774f13914dc50b8b99af1, type: 3}
+  framesAttack2:
+  - {fileID: 6934013284892070054, guid: 224cb1a24435f48ebb7b6bf772bfbfe4, type: 3}
+  - {fileID: -7957278214813060823, guid: 224cb1a24435f48ebb7b6bf772bfbfe4, type: 3}
+  - {fileID: 1409549213185883415, guid: 224cb1a24435f48ebb7b6bf772bfbfe4, type: 3}
+  - {fileID: 4976274401295337057, guid: 224cb1a24435f48ebb7b6bf772bfbfe4, type: 3}
+  - {fileID: -5639509438907974925, guid: 224cb1a24435f48ebb7b6bf772bfbfe4, type: 3}
+  - {fileID: 452926297546027425, guid: 224cb1a24435f48ebb7b6bf772bfbfe4, type: 3}
+  - {fileID: 6238536850125145498, guid: 224cb1a24435f48ebb7b6bf772bfbfe4, type: 3}
+  - {fileID: -7543445572115272496, guid: 224cb1a24435f48ebb7b6bf772bfbfe4, type: 3}
+  - {fileID: 3650157944247549718, guid: 224cb1a24435f48ebb7b6bf772bfbfe4, type: 3}
+  - {fileID: -7367232305435581187, guid: 224cb1a24435f48ebb7b6bf772bfbfe4, type: 3}
+  - {fileID: -2140677535924406074, guid: 224cb1a24435f48ebb7b6bf772bfbfe4, type: 3}
+  - {fileID: 8783954347948720124, guid: 224cb1a24435f48ebb7b6bf772bfbfe4, type: 3}
+  - {fileID: -6287830092200510888, guid: 224cb1a24435f48ebb7b6bf772bfbfe4, type: 3}
+  - {fileID: -2359986511456683444, guid: 224cb1a24435f48ebb7b6bf772bfbfe4, type: 3}
+  - {fileID: -5056835073426596899, guid: 224cb1a24435f48ebb7b6bf772bfbfe4, type: 3}
+  deathAnimations: []
+  framesAttack1: []
 --- !u!114 &-4312281257201919279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,3 +254,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb228042d1296486c99d23276dbad9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rayLength: 0.01
+  rayOffset: 0.2
